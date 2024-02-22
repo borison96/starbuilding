@@ -1,0 +1,33 @@
+.date-input-container {
+    padding: 0;
+    margin: 5px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: transparent;
+    display: flex;
+    cursor: pointer;
+    &:hover:not(:focus-within) {
+        border-bottom: 1px solid #7B83EB;
+        background-color: rgba(244, 248, 255, 0.817);
+    }
+    input {
+        border: none;
+        border-bottom: 1px solid #7B83EB;
+        width: 80%;
+        font-size: 12px;
+    }
+    button {
+        border: none;
+        background: none;
+        font-size: 14px;
+        color: #7B83EB;
+    }
+    span {
+        font-size: 12px;
+        color: #888;
+    }
+}
+.date-input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}

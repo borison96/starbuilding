@@ -1,0 +1,36 @@
+.custom-button {
+  border-radius: 48px;
+  padding: 2px 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+  img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+}
+
+.light.custom-button {
+  color: #EBEBEB;
+}
+.dark.custom-button:not(.selected) > img {
+  filter: invert(1);
+}
+
+.custom-icon {
+  padding: 10px;
+  border-radius: 48px;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+  cursor: pointer;
+  &.selected {
+    background-color: #295EA7;
+    color: #EBEBEB;
+  }
+}

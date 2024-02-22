@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: STARTBUILDING
+    version: 0.001
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${POSTGRESQL_ADDON_HOST}:${POSTGRESQL_ADDON_PORT}/${POSTGRESQL_ADDON_DB}
+    username: ${POSTGRESQL_ADDON_USER}
+    password: ${POSTGRESQL_ADDON_PASSWORD}
+    hikari:
+      idle-timeout: 10000
+      connection-timeout: 3000
+      maximumPoolSize: 3
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: 140MB
+      max-request-size: 140MB
+api:
+  base:
+    url: /api/v1
+jwt:
+  security:
+    client-id: startbuilding_client
+    client-secret: s17@t61ding@secret
+    access-token-validity-seconds: 3600
+    refresh-token-validity-seconds: 27600
+    signing-key: uwop4555iuyçàuytbpkopotiong@3$#slnn8usksmaljfoeo0SSSodncbcCSSaigeNXWhI3ihsi
+    token-endpoint: /oauth/token
+  resource: start_id
+rome:
+  client-id: PAR_startbuildingdev_49133af63b168f7080058f1cd608c886ca9e1e2d2d0c4f1fa81752edca4d5b1d
+  client-secret: 209c968781c3f9137cf3ced4abf70cf5672e6afc6f091fe2654230fc3ab71587
+  scopes: baseadressenationalev1,anoteav1,eterritoirev1,explorateurmetiersv1 explojob
+  token-host: https://entreprise.pole-emploi.fr
+  token-endpoint: /connexion/oauth2/access_token
+  realm: /partenaire
+  api-host: https://api.emploi-store.fr
+  api-search-endpoint: /explorateurmetiers/v1/explorateurmetiers
+#  bootstrap-csv: classpath:rome_f_arbor_construction.csv
+  bootstrap-csv: classpath:rome_arboprincipale-dec2016.csv
+  bootstrap-domains: f
+

@@ -1,0 +1,10 @@
+{
+    "build": {
+        "type": "maven",
+        "goal": "package  -DskipTests"
+    },
+    "deploy": {
+        "jarName": "api/target/startbuilding.jar"
+    }
+
+}

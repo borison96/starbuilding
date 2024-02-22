@@ -1,0 +1,19 @@
+.simple-progress-xx {
+    width: 90%;
+    margin: 5px auto;
+    min-height: 15px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    span {
+        height: 100%;
+        display: block;
+        width: 0;
+        color: rgb(255, 251, 251);
+        position: absolute;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }

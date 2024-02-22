@@ -1,0 +1,55 @@
+.main-layout {
+  font-family: Aeroport, serif;
+  display: grid;
+  grid-template-columns: 70px auto;
+  height: 100%;
+  position: sticky;
+  overflow: auto;
+}
+
+.navbar {
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  background-color: #232937;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 0px 10px 0px rgba(0,0,0,0.5);
+  .navbar-top {
+    margin-top: 10px;
+    height: 50%;
+  }
+  .navbar-bottom {
+    align-content: flex-end;
+    margin-bottom: 10px;
+  }
+  .navbar-badge-cc {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-radius: 50%;
+    color: #232937;
+    background: #fff;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+}
+
+.background-layout.dark {
+  background-color: #303643;
+  height: calc(100% - 6.2em);
+  width: 100%;
+  overflow: auto;
+}
+
+.background-layout.light {
+  background-color: #E2E2E3;
+  height: calc(100% - 6.2em);
+  width: 100%;
+  overflow: auto;
+}

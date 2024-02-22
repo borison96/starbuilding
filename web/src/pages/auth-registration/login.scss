@@ -1,0 +1,268 @@
+.login_fullbackground {
+  font-family: Aeroport, serif;
+  background-image: url("./../../asset/svg/background.svg");
+  background-size: cover;
+  background-color: #EBEBEB;
+  background-position: top;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.login_grid-column {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 5fr 6fr 1fr;
+  height: 100%;
+}
+
+.register_grid-row {
+  display: grid;
+  grid-template-rows: 18fr 6fr;
+  position: relative;
+  left: 0px;
+  bottom: 0px
+}
+
+.login_footer {
+  padding-bottom: 20px;
+  .sign_user-type {
+    .sign_input-container {
+      margin-top: 10px !important;
+    }
+  }
+}
+
+.sign_user-type-center {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.sign_user-type > *:first-child {
+  margin-right: 30px;
+}
+
+.sign_user-type {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login_left-container {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-left: clamp(30px, 4vw, 200px);
+  b {
+    display: block;
+    color: #1E2432;
+    margin-top: 5vh;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+  }
+}
+
+.login_goback {
+  margin-right: clamp(30px, 2vw, 200px);
+  cursor: pointer;
+}
+.login_right-container {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 8%;
+}
+
+.login_switch {
+  display: flex;
+  margin-right: 15px;
+  justify-content: flex-end;
+  padding: 8px;
+  background-color: white;
+  border-radius: 48px;
+  span {
+    padding: 10px;
+    border-radius: 48px;
+  }
+  button {
+    padding: 10px;
+    border-radius: 48px;
+    background-color: transparent;
+    border: none;
+  }
+  .selected {
+    background-color: #EBEBEB;
+  }
+}
+
+.sign_form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.register_goback {
+  background-color: #1E2432;
+  color: white;
+  border-radius: 48px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  svg {
+    position: relative;
+    top: 42%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.icon_center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.marginTop20 {
+  margin-top: 40px;
+}
+.auth-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.auth-content-cc {
+  width: 100%;
+  max-width: 500px;
+  &.align-center {
+    margin: auto;
+  }
+  > h1 {
+    font-weight: 600;
+  }
+}
+.org-select-cc {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.app-auth-logo {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.aut-switch-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+.auth-container-cc {
+  margin: 28px 10vw;
+}
+.auth-subtitle-cc {
+  margin-bottom: 2vw;
+}
+.input-compact {
+  margin-top: 15px !important;
+}
+.auth-content-cc-cc {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.auth-select-user-type {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+  align-items: center;
+  > div:not(:first-of-type),
+  > div:not(:last-of-type) {
+    margin: 15px;
+  }
+  > div:first-of-type {
+    margin-left: 0;
+  }
+  > div:last-of-type {
+    margin-right: 0;
+  }
+  &__heading {
+    text-align: center;
+    margin: 100px auto 15px;
+  }
+}
+.auth-input-typeahead {
+  border-radius: 48px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+}
+.flex-content {
+  display: flex;
+}
+@media (max-width:680px) {
+  .flex-content {
+    flex-direction: column;
+  }
+  .auth-container-cc {
+    margin: 15px;
+  }
+  .sign_form-container {
+    align-items: center;
+  }
+  .auth-select-user-type {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    > div:first-of-type {
+      margin-left: 15px;
+    }
+    > div:last-of-type {
+      margin-right: 15px;
+    }
+    &__heading {
+      margin: 15px auto;
+    }
+  }
+  .org-select-cc {
+    flex-direction: column;
+  }
+}
+
+@media (min-height:680px) {
+  .check-cgu {
+    margin-top: 25px;
+    font-size: .8em;
+
+    .check-cgu-line {
+      margin-bottom: 5px;
+
+      span {
+        margin-left: 5px;
+        font-weight: 700;
+
+        u {
+          text-decoration-thickness: 2px;
+        }
+      }
+    }
+  }
+}
+@media (max-height:680px) {
+  .check-cgu {
+    margin-top: 25px;
+    font-size: .6em;
+
+    .check-cgu-line {
+      margin-bottom: 5px;
+
+      span {
+        margin-left: 5px;
+        font-weight: 400;
+
+        u {
+          text-decoration-thickness: 2px;
+        }
+      }
+    }
+  }
+}

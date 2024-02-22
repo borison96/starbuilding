@@ -1,0 +1,95 @@
+spring:
+  application:
+    name: STARTBUILDING
+    version: 0.001
+  datasource:
+    url: jdbc:postgresql://localhost:5432/startbuilding
+    driver-class-name: org.postgresql.Driver
+    username: startbuilding
+    password: startbuilding
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+#    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  flyway:
+    enabled: true
+  thymeleaf:
+    prefix: classpath:/mail/
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nnoukastephen@gmail.com
+    password: uqhdtcphhkalubum
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  servlet:
+    multipart:
+      max-file-size: 140MB
+      max-request-size: 140MB
+api:
+  base:
+    url: /api/v1
+jwt:
+  security:
+    client-id: startbuilding_client
+    client-secret: s17@t61ding@secret
+    access-token-validity-seconds: 86400
+    refresh-token-validity-seconds: 604800
+    signing-key: uwop4555iuyçàuytbpkopotiong@3$#slnn8usksmaljfoeo0SSSodncbcCSSaigeNXWhI3ihsi
+    token-endpoint: /oauth/token
+  resource: start_id
+rome:
+  client-id: PAR_startbuildingdev_49133af63b168f7080058f1cd608c886ca9e1e2d2d0c4f1fa81752edca4d5b1d
+  client-secret: 209c968781c3f9137cf3ced4abf70cf5672e6afc6f091fe2654230fc3ab71587
+  scopes: baseadressenationalev1,anoteav1,eterritoirev1,explorateurmetiersv1 explojob
+  token-host: https://entreprise.pole-emploi.fr
+  token-endpoint: /connexion/oauth2/access_token
+  realm: /partenaire
+  api-host: https://api.emploi-store.fr
+  api-search-endpoint: /explorateurmetiers/v1/explorateurmetiers
+#  bootstrap-csv: classpath:rome_f_arbor_construction.csv
+  bootstrap-csv: classpath:rome_arboprincipale-dec2016.csv
+  bootstrap-domains: f
+forge:
+  # Client AutoDesk Forge Account
+  client_id: l5AF0lIbrMvjuqf0iLwxHS795R73oMid
+  client_secret: J30e1b7a7cb54487
+
+  # Personnal AutoDesk Forge Account
+  #client_id: DVsvSv3Z9Z2bYN9AmWLzVFyRGFDUH3zh
+  #client_id: y1tSSFao4zFkH3feWEB4FemykxMiGnL9
+  #client_secret: 7ubsIjgVM1xxgt0B
+  #client_secret: u610QP9an1kbszdj
+  scopes: code:all data:write data:read bucket:create bucket:delete bucket:read
+  forge-host: https://developer.api.autodesk.com
+  token-endpoint: /authentication/v1/authenticate
+  get-bucket: /oss/v2/buckets
+ui:
+  host: /
+  project-invite-success-url: /
+aws:
+  s3:
+    bucket: joza-ged
+    access-key: AKIAZHJ2ZIEKDRKSIZFN
+    secret-key: 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
+    url-validity-seconds: 86400
+  region: eu-west-3
+#server:
+#  port: 8080
+#  ssl:
+#    key-store-password: startbuilding
+#    key-store: classpath:startbuilding.p12
+#    key-store-type: PKCS12
+#    key-alias: startbuilding
+
+logging:
+  level:
+    org:
+      apache:
+        http: WARN

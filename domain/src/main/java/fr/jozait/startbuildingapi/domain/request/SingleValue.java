@@ -1,0 +1,13 @@
+package fr.jozait.startbuildingapi.domain.request;
+
+public class SingleValue {
+    private String value;
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+}

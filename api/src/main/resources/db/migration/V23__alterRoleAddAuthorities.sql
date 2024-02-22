@@ -1,0 +1,3 @@
+ALTER TABLE role ADD authorities TEXT NULL;
+ALTER TABLE users DROP COLUMN role;
+ALTER TABLE users ADD COLUMN role_id BIGINT NULL;

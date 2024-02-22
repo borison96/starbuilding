@@ -1,0 +1,39 @@
+.fav-block-container-0i {
+    display: flex;
+    margin: 15px 0;
+    flex-direction: column;
+    .fav-block-title {
+        padding: 5px 0;
+        &::after {
+            content: "\272D";
+            margin: 0 5px;
+            color: #F3BE3D;
+        }
+    }
+    .fav-blocks {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .fav-btn {
+        width: 80px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        margin: 0 2px 2px 0;
+        border-radius: 48px;
+        font-size: 12px;
+        border: 1px solid transparent;
+        outline: none;
+        background-color: #EBEBEB;
+        height: 22px;
+        &.empty {
+            border: 1px dashed #707070;
+            background-color: transparent;
+            font-weight: bolder;
+            padding: 0;
+            text-align: center;
+        }
+    }
+}

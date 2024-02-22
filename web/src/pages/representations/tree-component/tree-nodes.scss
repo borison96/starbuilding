@@ -1,0 +1,67 @@
+.node-link {
+    stroke-width: 8px;
+    stroke: #fff !important;
+    transition: stroke .3s;
+}
+.node-link.to-active {
+    stroke: #295EA7 !important;
+}
+.node-link.to-empty {
+    stroke: #F3BE3D !important;
+    stroke-dasharray: 4;
+}
+.empty-link {
+    display: none;
+}
+.placement-form-u0 {
+    padding: 10px;
+    max-width: 200px;
+    background-color: #dde;
+    border-radius: 12px;
+    font-size: 12px;
+    .placement-title {
+        text-align: center;
+        font-weight: bolder;
+    }
+    textarea, input, button, select {
+        width: 100%;
+        border: 1px solid transparent;
+        outline: none;
+        margin-bottom: 5px;
+        background: transparent;
+        padding: 2px;
+        border-bottom-color: #ccc;
+        &:hover,
+        &:focus {
+            border-color: #ccc;
+            border-radius: 48px;
+        }
+        &:disabled {
+            background-color: rgba($color: #aaa, $alpha: 0.5);
+            cursor: not-allowed;
+        }
+    }
+    button {
+        border-color: #ccc;
+        border-radius: 48px;
+    }
+    button.placement-close-icon {
+        display: flex;
+        border: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+        background-color: #dde;
+        position: absolute;
+        top: -2%;
+        left: -5%;
+        &:hover {
+            background-color: #eef;
+        }
+    }
+    textarea {
+        padding-left: 15px;
+    }
+}

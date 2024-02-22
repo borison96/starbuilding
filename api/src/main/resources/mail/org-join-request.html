@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title th:remove="all">Template for HTML email with inline image</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body style="margin:0;padding:0;">
+    <!-- container -->
+    <div style="width:100%!important;min-width:100%;background-color:#fafafa;color:#333333;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:normal;text-align:center;line-height:20px;font-size:14px;margin:0;padding:0">
+        <!-- outer table -->
+        <table style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:center;height:100%;width:100%;" bgcolor="#fafafa">
+            <tbody>
+                <tr style="text-align:center;" align="center">
+                    <td>
+                        <!-- header -->
+                        <table style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:center;height:100%;width:100%;" bgcolor="#fafafa">
+                            <tbody>
+                            <tr style="vertical-align:top;">
+                                <td>
+                                    <h1 th:text="${appName}">StartBuilding</h1>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!-- body -->
+                        <table style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:center;height:100%;margin:0 auto;" bgcolor="#fafafa">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div style="min-width:400px;background-color:#fff;border:1px solid #ddd;border-radius:4px;padding:15px;">
+                                        <table style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:center;height:100%;width:100%;">
+                                            <tbody>
+                                            <tr>
+                                                <td style="font-size: 1.35rem;padding:15px 0;border-bottom:1px solid #ddd;">
+                                                    <strong th:text="${userName}">Nnouka</strong> demande à rejoindre votre organisation <strong th:text="${orgName}">Big orga</strong>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:center;height:100%;width:100%;">
+                                            <tbody>
+                                            <tr>
+                                                <td style="padding:5px;text-align:left;">
+                                                   Vous pouvez <strong><a href="#" th:href="${link}">accepter</a></strong> or <strong><a href="#" th:href="${link}">refuser</a></strong> cette demande
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:center;height:100%;width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding:5px;text-align:left;">
+                                                        Cette demande expirera dans <strong th:text="${expiresIn}">7 days</strong>.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:center;height:100%;width:100%;">
+                                            <tbody>
+                                            <tr>
+                                                <td style="padding:5px 15px;margin-top:20px;">
+                                                    <a role="button" href="#" style="padding:5px 10px;cursor:pointer;width:60px;text-decoration:none;background-color:#295EA7;border-radius:4px;color:#fff;" th:href="${link}">Voir ici</a>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!-- fotter -->
+                        <table style="border-spacing:0;border-collapse:collapse;vertical-align:top;text-align:center;height:100%;width:100%;padding:20px;" bgcolor="#fafafa">
+                            <tbody>
+                            <tr>
+                                <td style="margin:0 auto;">
+                                    <img width="150px;" src="http://localhost:3000/logo.png" th:alt="${appName}" th:scr="${logoUrl}">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="margin:0 auto;color:#888;">
+                                    75017, Paris, France
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

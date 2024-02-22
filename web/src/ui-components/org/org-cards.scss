@@ -1,0 +1,26 @@
+.select-org-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    flex-wrap: wrap;
+    cursor: pointer;
+    background-color: #fff;
+    &.selected {
+      background-color: #295EA7;
+      color: #fff;
+    }
+  }
+  .select-org-card:not(.selected):hover {
+    border: 1px solid #295EA7;
+    color: #295EA7;
+  }
+  .join-org-overlay {
+    display: block;
+    padding: 0 10px 0 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }

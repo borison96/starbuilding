@@ -1,0 +1,8 @@
+{
+  "login_description": "La révolution numérique de l'Acte de Construire est maintenant possible grâce à vous",
+  "register_description": "Merci de remplir les informations ci-après pour compléter votre Profil utilisateur",
+  "field_required": "Ce champ est requis",
+  "choose_profil_user": "Merci de choisir votre profil utilisateur :",
+  "choose_organisation": "Votre organisation utilise déjà StartBuilding ?",
+  "join_organisation": "Cette étape vous permettra de visualiser les projets auxquels participe votre organisation"
+}

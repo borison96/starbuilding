@@ -1,0 +1,285 @@
+.sign_input-container {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (max-height:680px) {
+  .sign_input-container {
+    background-color: white;
+    border-radius: 48px;
+    position: relative;
+    width: 100%;
+    height: 32px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    .required {
+      color: #de1818!important;
+      position: absolute;
+      left: 2px;
+      z-index: 99;
+    }
+
+    input,
+    button {
+      width: 100%;
+      background: transparent;
+      border-radius: 48px;
+      border-style: none;
+      outline: none;
+      font-size: 12px;
+      color: #333;
+      font-weight: 300;
+      height: 100%;
+      padding: 0 28px;
+      position: relative;
+    }
+    .field_required {
+      position: absolute;
+      top:75px;
+      left: 0px;
+      font-size: 10px;
+      color: #E33F1A;
+      font-weight: 300;
+      transition: 0.5s;
+      pointer-events: none;
+    }
+
+    span {
+      position: absolute;
+      top:1px;
+      left: 15px;
+      padding: 8px;
+      display: inline-block;
+      font-size: 12px;
+      color: #959595;
+      font-weight: 300;
+      transition: 0.5s;
+      pointer-events: none;
+    }
+    .icon {
+      color: white;
+      font-weight: 500;
+      height: 20px;
+    }
+    .light {
+      color: #1E2432;
+    }
+  }
+}
+
+@media (min-height: 680px) {
+  .sign_input-container {
+    background-color: white;
+    border-radius: 48px;
+    position: relative;
+    width: 100%;
+    height: 48px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+
+    .required {
+      color: #de1818 !important;
+      position: absolute;
+      left: 2px;
+      z-index: 99;
+    }
+
+
+    input,
+    button {
+      width: 100%;
+      background: transparent;
+      border-radius: 48px;
+      border-style: none;
+      outline: none;
+      font-size: 16px;
+      color: #333;
+      font-weight: 300;
+      height: 100%;
+      padding: 0 28px;
+      position: relative;
+    }
+
+    .field_required {
+      position: absolute;
+      top: 75px;
+      left: 0px;
+      font-size: 10px;
+      color: #E33F1A;
+      font-weight: 300;
+      transition: 0.5s;
+      pointer-events: none;
+    }
+
+    span {
+      position: absolute;
+      top: 1px;
+      left: 15px;
+      padding: 13px;
+      display: inline-block;
+      font-size: 16px;
+      color: #959595;
+      font-weight: 300;
+      transition: 0.5s;
+      pointer-events: none;
+    }
+
+    .icon {
+      color: white;
+      font-weight: 500;
+      height: 30px;
+      position: relative;
+      transform: translateX(-50%);
+    }
+    .light {
+      color: #1E2432;
+    }
+  }
+}
+.sign_input-container.disabled {
+  input[type="button"] {
+    background-color: #959595;
+  }
+  .icon {
+    color: #959595;
+  }
+}
+
+.sign_input-container-fgl {
+  background-color: #959595;
+  border-radius: 48px;
+  position: relative;
+  top: 5%;
+  width: 280px;
+  height: 48px;
+  margin-bottom: 20px;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 16px 16px 16px 16px;
+    border-radius: 48px;
+    border-style: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 300;
+  }
+
+  span {
+    position: absolute;
+    padding: 13px;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+
+  .icon {
+    color: white;
+    font-weight: 500;
+    height: 25px;
+    position: relative;
+    top: 47%;
+    left: 10%;
+    margin-right: 20px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.errorMsg {
+  color: #de1818;
+  font-size: 0.8em;
+  margin-left: 20px;
+  width: initial;
+}
+
+
+.sign_input-typeahead {
+  border-radius: 48px;
+  width: 80%;
+  height: 64px;
+  margin-bottom: 100px;
+
+  *:first-child {
+    height: 100%;
+    width: 100%;
+    border-radius: 48px;
+    border: none;
+    * {
+      border-radius: 48px;
+    }
+  }
+}
+
+
+.sign_input-container input:focus ~ span,
+.sign_input-container input:hover ~ span,
+.sign_input-container input:valid ~ span {
+  transform: translateX(-10px) translateY(-32px);
+  font-size: 12px;
+}
+
+.sign_input-container input[type="button"],
+.sign_input-container button[type="submit"],
+.sign_input-container input.submit {
+  background-color: #1E2432;
+  border-radius: 48px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: left;
+}
+
+.sign_input-container input[type="button"],
+.sign_input-container button.submit.light
+.sign_input-container input.submit.light {
+  color: #1E2432;
+  border-radius: 48px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: left;
+}
+
+.sign_input-container button[type="submit"] {
+  display: flex;
+  align-items: center;
+
+}
+
+.card-h {
+    margin-top: 0;
+    background-color: #EBEBEB;
+    height: 32px;
+    border-radius: 48px;
+  span {
+    position: absolute;
+    display: inline-block;
+    color: #303643;
+    font-weight: 500;
+    transition: 0.5s;
+    pointer-events: none;
+    padding: 4px;
+  }
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding:6px 12px 12px 24px;
+    border-radius: 48px;
+    border-style: none;
+    outline: none;
+    font-size: .8em;
+    color: #333;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,3 @@
+ALTER TABLE project_node ALTER COLUMN code DROP NOT NULL;
+ALTER TABLE project_node ALTER COLUMN longitude DROP NOT NULL;
+ALTER TABLE project_node ALTER COLUMN latitude DROP NOT NULL;

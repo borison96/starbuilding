@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="39.533" height="49.508" viewBox="0 0 39.533 49.508">
+    <g id="Logo" transform="translate(-111 -196.5)">
+        <g id="Group_2442" data-name="Group 2442" transform="translate(116.651 197.5)">
+            <path id="Path_1138" data-name="Path 1138" d="M82-38.655h3.041V-42H82Z" transform="translate(-62.842 78.292)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1139" data-name="Path 1139" d="M103-38.655h3.345V-42H103Z" transform="translate(-78.279 78.292)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1140" data-name="Path 1140" d="M82-59.959h3.041V-63H82Z" transform="translate(-62.842 92.906)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1141" data-name="Path 1141" d="M103-59.959h3.345V-63H103Z" transform="translate(-78.279 92.906)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1142" data-name="Path 1142" d="M48-120.655h3.041V-124H48Z" transform="translate(-39.181 135.356)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1143" data-name="Path 1143" d="M69-120.655h3.041V-124H69Z" transform="translate(-53.795 135.356)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1144" data-name="Path 1144" d="M48-141.655h3.041V-145H48Z" transform="translate(-39.181 149.97)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1145" data-name="Path 1145" d="M69-141.655h3.041V-145H69Z" transform="translate(-53.795 149.97)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1146" data-name="Path 1146" d="M19-38.655h3.041V-42H19Z" transform="translate(-19 78.292)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1147" data-name="Path 1147" d="M40-38.655h3.041V-42H40Z" transform="translate(-33.614 78.292)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1148" data-name="Path 1148" d="M19-59.959h3.041V-63H19Z" transform="translate(-19 92.906)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1149" data-name="Path 1149" d="M40-59.959h3.041V-63H40Z" transform="translate(-33.614 92.906)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1150" data-name="Path 1150" d="M19-80.959h3.041V-84H19Z" transform="translate(-19 107.52)" fill="#959595" fill-rule="evenodd"/>
+            <path id="Path_1151" data-name="Path 1151" d="M40-80.959h3.041V-84H40Z" transform="translate(-33.614 107.52)" fill="#959595" fill-rule="evenodd"/>
+            <line id="Line_88" data-name="Line 88" y1="19.497" transform="translate(2.996)" fill="none" stroke="#f3be3d" stroke-width="2"/>
+            <line id="Line_90" data-name="Line 90" x1="19.497" transform="translate(2.996)" fill="none" stroke="#f3be3d" stroke-linecap="square" stroke-width="2"/>
+            <line id="Line_91" data-name="Line 91" y1="25.346" transform="translate(22.493)" fill="none" stroke="#f3be3d" stroke-width="2"/>
+            <line id="Line_92" data-name="Line 92" y1="4.577" transform="translate(4.946 42.894)" fill="none" stroke="#959595" stroke-width="2"/>
+            <path id="Path_1153" data-name="Path 1153" d="M0,4.577V0" transform="translate(23.62 42.894)" fill="none" stroke="#959595" stroke-width="2"/>
+        </g>
+        <rect id="Rectangle_1525" data-name="Rectangle 1525" width="18.723" height="28.085" transform="translate(112 216.923)" fill="none" stroke="#295ea7" stroke-width="2"/>
+        <path id="Path_1152" data-name="Path 1152" d="M0,0H18.849V21.4H0Z" transform="translate(130.684 223.605)" fill="none" stroke="#e33f1a" stroke-width="2"/>
+    </g>
+</svg>

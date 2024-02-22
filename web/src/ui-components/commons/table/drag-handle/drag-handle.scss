@@ -1,0 +1,22 @@
+.drag-handle-xx {
+    padding: 0 2px;
+    margin: 0;
+    width: 15px;
+    height: 100%;
+    cursor: move;
+    display: inline-flex;
+    align-items: center;
+    .drag-handle-bars {
+        padding: 0;
+        margin: 0;
+        width: 10px;
+        height: 10px;
+        visibility: hidden;
+        div {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: #888;
+        }
+    }
+}
